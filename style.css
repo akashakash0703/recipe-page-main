@@ -30,6 +30,9 @@ body{
     border-radius: 25px;
     margin: 10% ;
 }
+.box{
+    width:100%;
+}
 h2,h3,.o{
   color: var(--Nutmeg);
   
@@ -45,8 +48,7 @@ h2{
     color: var(--DarkCharcoal);
 }
 .om img{
-    width:650px;
-    height:300px;
+    width:100%;
     border-radius: 10px;
 }
 .om p{
@@ -62,7 +64,7 @@ h2{
     margin-left: 20px;
     
 }
-.ing ul ,.ins ol,.nut p{
+.ing ul ,.ins ul,.nut >p{
     padding: 20px 30px;
 }
 .pre,.ins,.ing{
@@ -74,16 +76,24 @@ h2{
 hr{
     margin-bottom: 50px;
 }
-.g{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+ul{
+    list-style: none;
 }
-.t,.o{
+.nutrition-list-item{
+    display:flex;
+    gap:20px;
+    
+}
+.nutrition-list-item>p:last-child{
+    color: var(--Nutmeg) ;
     font-weight: bold;
 }
-.t ul,.o ul{
-    list-style: none;
+.nutrition-list-item:not(:last-child){
+border-bottom: 1px solid;
+}
+.nutrition-list-item>p{
+    flex:1
 }
 
 
